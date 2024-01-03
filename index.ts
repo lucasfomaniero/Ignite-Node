@@ -14,7 +14,6 @@ interface User {
     name: string;
     email: string;
 }
-const users: User[] = []
 
 app.get("/users", (req, res) => {
     const users = database.select('users');
